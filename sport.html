@@ -50,16 +50,61 @@
         <h2>2016</h2>
 
         Chegem, 6A. 5th prize at SPb Mountaineering Championship
-        <p align="right" style="font-size:80%;color:#CCCCCC;">
-            <img src="static/images/chegem.jpeg"/>
+        <p>
+            <img id="photo5" class="photo" src="static/images/chegem.jpeg"/>
+            <div id="modal_photo5" class="modal">
+                <span id="close5" class="close">&times;</span>
+                <img class="modal-content" id="img5"/>
+            </div>
+            <script>
+                var modal = document.getElementById('modal_photo5');
+                var img = document.getElementById('photo5');
+                var modalImg = document.getElementById("img5");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                var span = document.getElementById("close5");
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                window.onkeydown = function( event ) {
+                    if ( event.keyCode == 27 ) {
+                      modal.style.display = "none";
+                    }
+                };
+            </script>
         </p>
         <hr/>
 
         <h2>2015</h2>
 
         Finished Mountain Rescue course
-        <p align="right" style="font-size:80%;color:#CCCCCC;">
-            <img src="static/images/rescue.png"/>
+        <p>
+            <img id="photo4" class="photo" src="static/images/rescue.png"/>
+
+            <div id="modal_photo4" class="modal">
+                <span id="close4" class="close">&times;</span>
+                <img class="modal-content" id="img04"/>
+            </div>
+            <script>
+                var modal = document.getElementById('modal_photo4');
+                var img = document.getElementById('photo4');
+                var modalImg = document.getElementById("img04");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                var span = document.getElementById("close4");
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                window.onkeydown = function( event ) {
+                    if ( event.keyCode == 27 ) {
+                      modal.style.display = "none";
+                    }
+                };
+            </script>
         </p>
         <hr/>
 
@@ -67,7 +112,30 @@
 
         Misses-tau, 5B
         <p>
-            <img src="static/images/misses.png"/>
+            <img id="photo3" class="photo" src="static/images/misses.png" />
+
+            <div id="modal_photo3" class="modal">
+                <span id="close3" class="close">&times;</span>
+                <img class="modal-content" id="img03"/>
+            </div>
+            <script>
+                var modal = document.getElementById('modal_photo3');
+                var img = document.getElementById('photo3');
+                var modalImg = document.getElementById("img03");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                var span = document.getElementById("close3");
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                window.onkeydown = function( event ) {
+                    if ( event.keyCode == 27 ) {
+                      modal.style.display = "none";
+                    }
+                };
+            </script>
         </p>
         <hr/>
 
@@ -75,16 +143,63 @@
 
         4th prize at Open Women's Mountaineering Cup
         <p>
-            <img src="static/images/cup.jpg"/>
+            <img id="photo2" class="photo" src="static/images/cup.jpg"/>
+
+            <div id="modal_photo2" class="modal">
+                <span id="close2" class="close">&times;</span>
+                <img class="modal-content" id="img02"/>
+            </div>
+            <script>
+                var modal = document.getElementById('modal_photo2');
+                var img = document.getElementById('photo2');
+                var modalImg = document.getElementById("img02");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                var span = document.getElementById("close2");
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                window.onkeydown = function( event ) {
+                    if ( event.keyCode == 27 ) {
+                      modal.style.display = "none";
+                    }
+                };
+            </script>
         </p>
         <hr/>
 
         <h2>2006</h2>
 
-        We founded a non-profit public organization -- <a href="https://vk.com/alpclub_polytexnik">Polytekhnik Mountaineering Club</a>.
+        We founded a non-profit public organization -- <a href="https://vk.com/alpclub_polytexnik">Polytekhnik
+        Mountaineering Club</a>.
         Right now it's one of the biggest mountaineering clubs in St. Petersburg. I've been trainer there since 2008.
         <p>
-            <img src="static/images/club.jpg"/>
+            <img id="photo1" class="photo" src="static/images/club.jpg"/>
+
+            <div id="modal_photo1" class="modal">
+                <span id="close1" class="close">&times;</span>
+                <img class="modal-content" id="img011"/>
+            </div>
+            <script>
+                var modal = document.getElementById('modal_photo1');
+                var img = document.getElementById('photo1');
+                var modalImg = document.getElementById("img011");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                var span = document.getElementById("close1");
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                window.onkeydown = function( event ) {
+                    if ( event.keyCode == 27 ) {
+                      modal.style.display = "none";
+                    }
+                };
+            </script>
         </p>
         <hr/>
     </section>
